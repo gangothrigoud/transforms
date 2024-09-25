@@ -1,0 +1,47 @@
+.container{
+
+    margin: 0;
+   width:350px;
+   height: 350px;
+   display: block;
+    border: 2px solid;
+   position: absolute;
+    top: 20%;
+    left: 30%;
+    background-color: blueviolet;
+    
+
+
+}
+button{
+    background-color: black;
+    color:white;
+    margin: 10px 10px;
+    border-radius: 20px;
+   
+ 
+
+}
+#ballon{
+    display: block;
+    transition: 0.4s ease;
+    padding: 100px;
+    width: 40%;
+    
+   
+}
+.container>.TRANS:hover~#ballon {
+  transform: translateX(20%);
+  transition: all 2s ease-in-out;
+
+}
+
+.container>.ROTATE:hover~#ballon{
+    transform: rotateX(360deg)
+}
+.container>.SCALE:hover~#ballon{
+    transform: scale(2);
+}
+.container>.SKEW:hover~#ballon{
+    transform: skew(45deg);
+}

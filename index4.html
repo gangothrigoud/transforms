@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(79, 98, 132);
+            
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        button {
+            background-color: black;
+            color: aliceblue;
+            padding: 10px;
+            border: 1px solid;
+            border-radius: 20%;
+            margin-left: 200px;
+        }
+
+        button:hover {
+            background-color: coral;
+
+        }
+
+        .header{
+            text-align: center;
+           background-color: brown;
+            color: aliceblue;
+            position:absolute;
+            left: 50%;
+        animation: move 1.5s forwards;
+        font-size: 2em;
+        
+        }
+        @keyframes move{
+            from{
+                top: -100px;
+            }
+            
+                to{
+                    top: 80px;
+                }
+            }
+        .sudo1 {
+
+            width: 230px;
+            height: 195px;
+            margin: 50px;
+            background-image: url("https://th.bing.com/th/id/OIP.cEGdoFL3nmx0oOqeQ12BGQHaHa?w=182&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: background-image 2s ease-in-out;
+            align-items: center;
+            filter: brightness(80%);
+
+            border-radius: 50%;
+        }
+
+
+        .sudo {
+            display: flex;
+            padding-left: 200px;
+            padding-top: 200px;
+
+
+        }
+        .content{
+            color: white;
+            text-align: center;
+            font-size:x-large;
+            animation: contentDiv 8s alternate ease-in-out;
+            
+        }
+      
+        @keyframes contentDiv {
+        0%  {transform: scale(1) rotate(0deg);}
+        25%  {transform: scale(2) rotate(360deg);}
+        50%  {transform: scale(.5) rotate(360deg);}
+       100%  {transform: scale(1) rotate(360deg);}
+
+       }
+        
+       
+
+ 
+ .header:target {
+  transform: scaleY(1);
+}
+ 
+
+        .sudo1:hover {
+            background-image: url("https://th.bing.com/th/id/OIP.5qZZJZMT8opFsKlfWn-mYQHaH3?w=152&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+          
+            border-radius: 50%;
+        }
+
+        .sudo2 {
+
+            width: 230px;
+            height: 195px;
+            margin: 50px;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR19JrwpgTtziOTjZLq37I2Z9hyZ6nJr1sUqg&s");
+
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: background-image 2s ease-in-out;
+            align-items: center;
+            filter: brightness(80%);
+            object-fit: cover;
+            border-radius: 90%;
+
+        }
+
+        .sudo2:hover {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwQxYYHDVj-zShc2XDED8-wp82iS8d-v_UPg&s");
+            animation: shrink 5s infinite alternate;
+        }
+
+        .sudo3 {
+
+            width: 230px;
+            height: 195px;
+            margin: 50px;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcam3CDixKIFV-ze70hvm2FLzr10CzbiPopA&s");
+
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: background-image 2s ease-in-out;
+            align-items: center;
+            filter: brightness(80%);
+            object-fit: cover;
+            border-radius: 50%;
+
+        }
+
+        .sudo3:hover {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8rI_tn3BpM-qwJC7iEu1ntsQtAN4ZDteE4g&s");
+            animation: shrink 5s infinite alternate;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <i>Animation</i>
+    </div>
+
+
+    <div class="sudo">
+        <div class="sudo1"></div>
+
+        <div class="sudo2"></div>
+        <div class="sudo3"></div>
+
+    </div>
+    <div class="content">
+    <section> My Favorite Things by Richard Rodgers is a delightful picture book that brings<br> the beloved song from The Sound of
+        Music to life. Filled with charming illustrations, <br>it celebrates the joy of simple pleasures and cherished
+        moments. </section>
+    </div>
+    
+</body>
+
+</html>
